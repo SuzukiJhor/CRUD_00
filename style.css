@@ -33,3 +33,108 @@ button {
     justify-content: center;
     margin: auto 12px;
 }
+
+.header span {
+    font-weight: 900;
+    font-size: 20px;
+    word-break: break-all;
+}
+
+#new {
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(57, 57, 226);
+}
+
+.table {
+    padding: 10px;
+    width: auto;
+    height: inherit;
+}
+
+.table::-webkit-scrollbar {
+    width: 12px;
+    background-color: whitesmoke;
+}
+
+.table::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: darkgray;
+}
+
+table {
+    width: 100%;
+    border-spacing: 10px;
+    word-break: break-all;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: whitesmoke;
+}
+
+tr {
+    border-bottom: 1px solid rgb(238, 235, 235)!important;
+}
+
+tbody tr td {
+    vertical-align: text-top;
+    padding: 6px;
+    max-width: 50px;
+}
+
+thead tr th {
+    padding: 5px;
+    text-align: start;
+    margin-bottom: 50px;
+}
+
+tbody tr {
+    margin-bottom: 50px;
+}
+
+thead tr th.acao {
+    width: 100px!important;
+    text-align: center;
+}
+tbody tr td.acao {
+    text-align: center;
+  }
+
+  @media (max-width: 700px) {
+    body {
+      font-size: 10px;
+    }
+    
+    .header span {
+      font-size: 15px;
+    }
+  
+    #new {
+      padding: 5px;
+      font-size: 10px;
+    }
+  
+    thead tr th.acao {
+      width: auto!important;
+    }
+    
+    td button i {
+      font-size: 20px!important;
+    }
+  
+    td button i:first-child {
+      margin-right: 0;
+    }
+  
+    .modal {
+      width: 90%!important;
+    }
+  
+    .modal label {
+      font-size: 12px!important;
+    }
+  }
