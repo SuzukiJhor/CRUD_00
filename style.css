@@ -45,6 +45,7 @@ button:hover {
     align-items: center;
     justify-content: center;
     margin: auto 12px;
+    border-radius: 5px;
 }
 
 .header span {
@@ -71,6 +72,7 @@ button:hover {
 .table::-webkit-scrollbar {
     width: 12px;
     background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .table::-webkit-scrollbar-thumb {
@@ -152,11 +154,12 @@ tbody tr td.acao {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* display: none; */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none !important;
     z-index: 999;
     align-items: center;
     justify-content: center;
+    display: flex;
 }
 
 .modal {
@@ -167,6 +170,7 @@ tbody tr td.acao {
     background-color: white;
     border-radius: 10px;
     width: 50%;
+    justify-content: center;
 }
 
 .modal label {
@@ -193,7 +197,7 @@ tbody tr td.acao {
     padding: 5px 10px;
     width: 100%;
     border: none;
-    background-color: rgb(57, 57, 226);
+    background-color: #FF008A;
     color: white;
 }
 
