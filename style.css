@@ -13,3 +13,23 @@ body {
     justify-content: center;
     background-image: url(/assets/background.png);
 }
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 90%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.header {
+    background: white;
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 12px;
+}
