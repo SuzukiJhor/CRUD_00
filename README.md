@@ -1,3 +1,3 @@
 # CRUD_00
-Projeto com CRUD responsivo com JavaScript.
+Projeto responsivo que realiza CRUD, utilizando JavaScript puro!
 Projeto para cadastro de colaboradores.
