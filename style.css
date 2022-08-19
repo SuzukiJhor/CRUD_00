@@ -155,11 +155,10 @@ tbody tr td.acao {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    display: none !important;
+    display: none;
     z-index: 999;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
 
 .modal {
