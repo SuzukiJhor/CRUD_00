@@ -15,7 +15,7 @@ body {
 }
 
 button {
-    width: 5%;
+    width: 10vw;
     cursor: pointer;
     background: #FF008A;
     border-radius: 5px;
@@ -39,11 +39,11 @@ button:hover {
 }
 
 .header {
-    background: white;
+    background: rgb(218, 98, 218);
     min-height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin: auto 12px;
     border-radius: 5px;
 }
