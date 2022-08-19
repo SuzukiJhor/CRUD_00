@@ -65,3 +65,26 @@ const openModal = (edit = false, index = 0) => {
         sSalario.value = ''
     }
 }
+
+btnSalvar.onclick = e => {
+
+    if (sNome.value == '' || sFuncao.value == '' || sSalario.value == '') {
+        return
+    }
+
+    e.preventDefault()
+
+    if (id != undefined) {
+        items[id].nome = sNome.value
+        items[id].funcao = sFuncao.value
+        items[id].salario = sSalario.value
+    } else {
+        items.push({ 'nome': sNome.value, 'funcao': sFuncao.value, 'salario': sSalario.value })
+    }
+
+    setItemsDB()
+
+    modal.classlist.remove('active')
+    loadItems()
+    id = undefined
+}
