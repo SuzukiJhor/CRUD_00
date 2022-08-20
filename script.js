@@ -5,6 +5,9 @@ const sFuncao = document.querySelector('#m-funcao')
 const sSalario = document.querySelector('#m-salario')
 const btnSalvar = document.querySelector('#btnSalvar')
 
+let items
+let id
+
 const getItemsDB = () => JSON.parse(localStorage.getItem('dbfunc')) != null ? items : []
 
 const setItemsDB = () => localStorage.setItem('dbfunc', JSON.stringify(items))
@@ -19,7 +22,7 @@ const loadItems = () => {
 
 loadItems()
 
-const insertItem = (item, index) => {
+const insertItem = (item, indsex) => {
     let tr = document.createElement('tr')
     tr.innerHTML = `
     <td>${item.nome}</td>
@@ -49,7 +52,7 @@ const openModal = (edit = false, index = 0) => {
     modal.classList.add('active')
 
     modal.onclick = e => {
-        if (e.target.className.indexOF('modal-container') != -1) {
+        if (e.target.className.indexOf('modal-container') != -1) {
             modal.classList.remove('active')
         }
     }
@@ -72,7 +75,7 @@ btnSalvar.onclick = e => {
         return
     }
 
-    e.preventDefault()
+    // e.preventDefault()
 
     if (id != undefined) {
         items[id].nome = sNome.value
