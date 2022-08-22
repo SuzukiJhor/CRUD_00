@@ -1,6 +1,6 @@
 # CRUD_0
 
- :zap: CRUD responsivo, utilizando JavaScript puro! <br>
+ :zap: CRUD responsivo, utilizando JavaScript puro, com armazenamento no LocalStorage. <br>
        Projeto para cadastro de colaboradores. </br>
        Projeto realizado somente para estudo, não estando em produção.
  <br><br>
