@@ -14,12 +14,11 @@ const openModal = (edit = false, index = 0) => {
     modal.onclick = e => {
         if (e.target.className.indexOf('modal-container') != -1) {
             modal.classList.remove('active')
-            console.log(e.target.className.indexOf('modal-container'))
+    
         }
     }
 
     if (edit) {
-        console.log(edit)
         sNome.value = items[index].nome
         sFuncao.value = items[index].funcao
         sSalario.value = items[index].salario
