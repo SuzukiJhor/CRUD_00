@@ -19,6 +19,7 @@ const openModal = (edit = false, index = 0) => {
     }
 
     if (edit) {
+        console.log(edit)
         sNome.value = items[index].nome
         sFuncao.value = items[index].funcao
         sSalario.value = items[index].salario
