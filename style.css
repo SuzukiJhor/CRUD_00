@@ -119,7 +119,8 @@ thead tr th .acao {
 tbody tr td .acao {
     text-align: center;
 }
-tbody tr td button{
+
+tbody tr td button {
     cursor: pointer;
 }
 

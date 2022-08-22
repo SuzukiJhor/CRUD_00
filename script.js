@@ -81,8 +81,6 @@ btnSalvar.onclick = e => {
 function loadItems() {
     items = getItemsDB()
 
-    console.log(items)
-
     tbody.innerHTML = ''
 
     items.forEach((item, index) => {
